@@ -84,12 +84,28 @@ let $ = createSnippetWithJQuery(`
 <main></main>
 `);
 
+// 1. renderPokemon
+//    - Runs the pokemon list of objects through a constructor function
+//    - Generates the markup needed to add each pokemon object to the DOM.
+//    - Adds each Pokemon to the <main>
+
 const renderPokemon = () => {
   // Solution code here...
+  let result = pokemon.results.map(data => new Poki(data));
+  console.log(result);
+  let template = $('#template').html();
+  var text = Mustache.render(template, result);
+
+  $('main').html(text);
 }
+
+// 2. Poki constructor function
+//    - This function will take the results of the API and make sure that they are all in the correct format.
 
 function Poki(obj) {
   // Solution code here ...
+  this.name = obj.name;
+  this.img_url = obj.url;
 }
 
 ///////////////////////////////////////////////////

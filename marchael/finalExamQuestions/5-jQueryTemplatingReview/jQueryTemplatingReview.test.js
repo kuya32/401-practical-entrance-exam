@@ -44,6 +44,14 @@ let $ = createSnippetWithJQuery(`
 
 const templateWithJQuery = () => {
   // Solution code here...
+  $(starWarsPeople).each(index => {
+    const $clonedSection = $('#template').clone();
+    $clonedSection.find('h2').text(starWarsPeople[index].name);
+    $clonedSection.find('h3').text(starWarsPeople[index].height);
+    $clonedSection.find('p').text(starWarsPeople[2].eye_color);
+
+    $('main').append($clonedSection);
+  })
 }
 
 ///////////////////////////////////////////////////
