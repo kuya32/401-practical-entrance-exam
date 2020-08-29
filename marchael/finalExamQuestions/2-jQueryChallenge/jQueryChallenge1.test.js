@@ -31,12 +31,12 @@ const cats = ['grumpy cat', 'hello kitty', 'garfield', 'cheshire cat', 'lil bub'
 
 const generateDropDown = () => {
   // Solution code here ...
+
 }
 
 const makeUniqueList = () => {
   // Solution code here ...
 }
-
 ///////////////////////////////////////////////////
 // TESTS
 ///////////////////////////////////////////////////

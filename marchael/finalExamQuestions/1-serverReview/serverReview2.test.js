@@ -66,10 +66,18 @@ const currentEvents = {
 
 function mapCurrentEvents() {
   // Solution code here...
+  return currentEvents.news.map(data => new Event(data));
+  
 }
 
 function Event(obj) {
   // Solution code here...
+  this.author = obj.author;
+  this.categories = obj.category;
+  this.summary = obj.description;
+  this.img_url = obj.image;
+  this.date = obj.published;
+  this.title = obj.title;
 }
 
 // Express sever here
@@ -79,6 +87,12 @@ const createServer = () => {
   const app = express();
 
   // Routes go here
+
+  app.get('/events', getCurrentEvents);
+
+  function getCurrentEvents (req, res) {
+    res.send(mapCurrentEvents());
+  }
 
   return app;
 
