@@ -36,8 +36,8 @@ sudo apt install chromium-browser
   1. Render each Pokemon result from the API inside of a `<form>` element with an action of `/pokemon`.
 
 - Make sure that there is a button inside of that `<form>` with the text "Add to Favorites".
-- Place the name of each character inside of the `<form>` in an `<h2>` 
-- You will need a hidden `<input>` tag to send the name to the server. 
+- Place the name of each character inside of the `<form>` in an `<h2>`
+- You will need a hidden `<input>` tag to send the name to the server.
 
 The structure MUST look like this:
 

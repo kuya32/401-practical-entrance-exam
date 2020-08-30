@@ -92,15 +92,14 @@ let $ = createSnippetWithJQuery(`
 const renderPokemon = () => {
   // Solution code here...
   let result = pokemon.results.map(data => new Poki(data));
-  console.log(result);
   let template = $('#template').html();
-  var text = Mustache.render(template, result);
+  var text = Mustache.render(template, {
+    name: result.name,
+    img_url: result.img_url
+  });
 
   $('main').html(text);
 }
-
-// 2. Poki constructor function
-//    - This function will take the results of the API and make sure that they are all in the correct format.
 
 function Poki(obj) {
   // Solution code here ...

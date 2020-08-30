@@ -1,0 +1,111 @@
+* {
+  /* outline: red dashed 2px; */
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: 'Fugaz One', cursive;
+  background-color: #ffcc03;
+  width: 600px;
+  margin: auto;
+  border-radius: 2%;
+}
+
+nav {
+  background-color: black;
+  height: 100px;
+  color: rgb(8, 102, 226);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > h1 {
+  margin-left: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+nav > ul {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+  font-weight: bold;
+  font-size: 50px;
+  text-decoration: underline;
+  color: rgb(8, 102, 226);
+}
+
+#pokemonBanner {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 100px 0px;
+}
+
+#pokemonBanner > img {
+  width: 500px;
+  border: groove rgb(8, 102, 226) 15px;
+}
+
+#listButton {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+
+#listButton > input {
+  width: 150px;
+  height: 150px;
+  font-family: 'Fugaz One', cursive;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(8, 102, 226)
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 250px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: groove rgb(8, 102, 226) 10px;
+
+}
+
+.listPokemon {
+  margin: 20px 0px 20px 0px;
+  color: rgb(8, 102, 226);
+  list-style: decimal;
+}
+
+.listPokemon > form {
+  text-align: center;
+}
+
+.listPokemon > form > h2 {
+  margin: 10px 0px 10px 0px;
+  font-size: 30px
+}
+
+#favButton {
+  background-color: #ffcc03;
+  color: rgb(8, 102, 226);
+  font-weight: bold;
+  font-family: 'Fugaz One', cursive;
+  border-radius: 10%;
+}
+
+.listPokemon > h2 {
+  font-size: 30px;
+}

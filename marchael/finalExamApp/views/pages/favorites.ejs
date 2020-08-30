@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../layout/head') %>
+
+<body>
+  
+  <%- include('../layout/header') %>
+
+  <h1 class='title'>Favorite Pokemon</h1>
+
+  <ul>
+    <% pokemon.forEach(poke => { %>
+      <div class='div'>
+        <li class='listPokemon'>
+          <h2><%= poke.name %></h2>
+        </li>
+      </div>
+    <% }) %>
+  </ul>
+
+</body>
+</html>
