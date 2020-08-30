@@ -31,11 +31,19 @@ const cats = ['grumpy cat', 'hello kitty', 'garfield', 'cheshire cat', 'lil bub'
 
 const generateDropDown = () => {
   // Solution code here ...
-
+  let filteredArray = cats.filter(function(item, pos){
+    return cats.indexOf(item) == pos;
+  })
+  console.log(filteredArray);
+  return filteredArray;
 }
 
 const makeUniqueList = () => {
   // Solution code here ...
+  generateDropDown.map(data => {
+    $('form').append('<select>');
+    $('select').text(data);
+  })
 }
 ///////////////////////////////////////////////////
 // TESTS

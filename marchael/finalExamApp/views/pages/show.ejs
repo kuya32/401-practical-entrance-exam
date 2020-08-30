@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../layout/head') %>
+
+<body>
+  
+  <%- include('../layout/header') %>
+
+  <h1 class='title'>List of Pokemon</h1>
+
+  <ul id='unorderedList'>
+    <% for (let i = 0; i < pokemonArray. length; i++) { %>
+    <div class='div'>
+      <li class='listPokemon'>
+        <form action='/pokemon' method='POST'>
+          <h2><%= pokemonArray[i].name %></h2>
+          <input name='name' type='hidden' value='<%= pokemonArray[i].name %>'>
+          <button id='favButton' type='submit' value='Add to Favorites'>Add to Favorite</button>
+        </form>
+      </li>
+    </div>
+    <% } %>
+  </ul>
+
+</body>
+</html>
